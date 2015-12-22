@@ -17,4 +17,12 @@
         SUZA APP CLUB 
     </author>
 
+	<!-- Testing the icons-->
+	<icon src="playicon.png" />
+    <icon src="img/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
+    <icon src="img/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:density="mdpi" />
+    <icon src="img/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="img/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
+    <icon src="img/icon/android/icon-144-xxhdpi.png"  gap:platform="android"    gap:density="xxhdpi" />
+
 </widget>
