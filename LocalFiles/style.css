@@ -1,5 +1,5 @@
 .logo{
-position:absolute;
+position:fixed;
 border:8px solid #cccccc;
 border-radius:15px;
 left:5px;
@@ -7,23 +7,48 @@ top:7px;
 width:295px;
 height:60px;
 
+
 }
+.all{
+position:fixed;
+ border:0px solid;
+ height:150px;
+ width:100%;
+ left:5px;
+ top:0px;
+background-color:#FFFFFF;
+
+}
+@media(min-width:900px){
 .big{
-position:absolute;
+position:static;
 border:0px solid ;
 border-radius:5px;
 left:5px;
-top:135px;
+margin-top:150px;
 width:308px;
-height:auto;
-
+height:465px;
+overflow:scroll;
 }
+}
+
 .juu{
 position:absolute;
 border:0px solid;
 height:40px;
-width:100px;
-left:200px;
+width:100%;
+left:205px;
+top:3px;
+
+}
+.footer{
+position:fixed;
+background-color:#FFFFFF;
+border:0px solid;
+height:45px;
+width:100%;
+left:5px;
+bottom:0px;
 }
 
 .rudi {
@@ -72,13 +97,13 @@ position:absolute;
  border-radius:15px;
  } 
  .menu{
- position:absolute;
+ position:fixed;
  border:0px solid;
  height:35px;
  width:305px;
  left:5px;
  top:95px;
-
+background-color:#FFFFFF;
  
  }
  .r{
