@@ -1,11 +1,18 @@
-
+.zoom{
+position:absolute;
+top:126px;
+left:-2px;
+height:40px;
+border:0px solid;	
+width:100%;	
+}
 .logo{
 position:;
 border:8px solid #cccccc;
 border-radius:15px;
 left:5px;
+margin-right:3px;
 margin-top:7px;
-width:95%;
 height:100px;
 }
 
@@ -16,7 +23,7 @@ position:fixed;
  border:0px solid;
  height:170px;
  width:100%;
- left:5px;
+ left:2px;
  top:0px;
 background-color:#FFFFFF;
 }
@@ -64,9 +71,9 @@ top:3px;
 
 .rudi {
 position:absolute;
- width: 68px; 
- left:15px;
- top:0px;
+ width: 25px; 
+ right:10px;
+ top:3px;
  padding: 10px; 
  color:white;
  background-color:#FF0000; 
@@ -92,7 +99,7 @@ position:absolute;
 .button {
 position:absolute;
  width: 68px; 
- left:170px;
+ right:60px;
  top:3px;
  padding: 10px; 
  color:white;
@@ -113,10 +120,13 @@ position:absolute;
  border-radius:15px;
  } 
  .button2 {
- width: 150px; 
+ position:absolute;
+ width: 30px; 
+ right:155px;
+ top:3px;
  padding: 10px; 
- background-color:#FF0000; 
  color:white;
+ background-color:#FF0000; 
  box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2); 
  font-weight:bold; 
  text-decoration:none;
@@ -133,21 +143,12 @@ position:absolute;
  
  
  }
- .b{
- position:absolute;
- border:0px solid;
- height:30px;
- width:280px;
- left:0px;
- top:13px;
- 
- 
- }
+
   .juu1{
  position:absolute;
  border:0px solid;
  height:25px;
- width:280px;
+ width:268px;
  left:260px;
  top:3px;
  
@@ -164,13 +165,14 @@ position:absolute;
  height:100%; 
  display:none; 
  }
+ 
  #loginScreen {
  height:210px; 
  width:290px; 
  margin:0 auto; 
  position:fixed;
- left:5px;
- top:53%;
+ right:-2px;
+ bottom:50px;
  z-index:10; 
  display:none;
  border:10px solid #cccccc;
@@ -183,12 +185,12 @@ position:absolute;
  
  
  #loginScreen1 {
- height:210px; 
- width:290px; 
+ height:150px; 
+ width:220px; 
  margin:0 auto; 
- position:absolute;
- left:5px;
- top:125px;
+  position:fixed;
+right:5px;
+bottom:50px;
  z-index:10; 
  display:none;
  border:10px solid #cccccc;
@@ -199,134 +201,7 @@ position:absolute;
  display:block;
  opacity:2; 
  }
-  #loginScreen2 {
- height:150px; 
- width:220px; 
- margin:0 auto; 
- position:absolute;
- left:5px;
- top:127.5%;
- z-index:10; 
- display:none;
- border:10px solid #cccccc;
- border-radius:10px;
- } 
- #loginScreen2:target, #loginScreen2:target + #cover{
- display:block;
- opacity:2; 
- }
- #loginScreen3 {
- height:150px; 
- width:220px; 
- margin:0 auto; 
- position:absolute;
- left:5px;
- top:105.5%;
- z-index:10; 
- display:none;
- border:10px solid #cccccc;
- border-radius:10px;
- } 
- #loginScreen3:target, #loginScreen3:target + #cover{
- display:block;
- opacity:2; 
- }
- #loginScreen4 {
- height:150px; 
- width:220px; 
- margin:0 auto; 
- position:absolute;
- left:5px;
- top:199%;
- z-index:10; 
- display:none;
- border:10px solid #cccccc;
- border-radius:10px;
- } 
- #loginScreen4:target, #loginScreen4:target + #cover{
- display:block;
- opacity:2; 
- }
- #loginScreen5 {
- height:150px; 
- width:220px; 
- margin:0 auto; 
- position:absolute;
- left:5px;
- top:182.5%;
- z-index:10; 
- display:none;
- border:10px solid #cccccc;
- border-radius:10px;
- } 
- #loginScreen5:target, #loginScreen5:target + #cover{
- display:block;
- opacity:2; 
- }
- #loginScreen6 {
- height:150px; 
- width:220px; 
- margin:0 auto; 
- position:absolute;
- left:5px;
- top:66%;
- z-index:10; 
- display:none;
- border:10px solid #cccccc;
- border-radius:10px;
- } 
- #loginScreen6:target, #loginScreen6:target + #cover{
- display:block;
- opacity:2; 
- }
- #loginScreen7 {
- height:150px; 
- width:220px; 
- margin:0 auto; 
- position:absolute;
- left:5px;
- top:121%;
- z-index:10; 
- display:none;
- border:10px solid #cccccc;
- border-radius:10px;
- } 
- #loginScreen7:target, #loginScreen7:target + #cover{
- display:block;
- opacity:2; 
- }
- #loginScreen8 {
- height:150px; 
- width:220px; 
- margin:0 auto; 
- position:absolute;
- left:5px;
- top:63%;
- z-index:10; 
- display:none;
- border:10px solid #cccccc;
- border-radius:10px;
- } 
- #loginScreen8:target, #loginScreen8:target + #cover{
- display:block;
- opacity:2; 
- }
- #loginScreen9 {
-height:150px; 
- width:220px; 
- margin:0 auto; 
- position:absolute;
- left:5px;
- top:182%;
- z-index:10; 
- display:none;
- border:10px solid #cccccc;
- border-radius:10px;
- } 
- #loginScreen9:target, #loginScreen9:target + #cover{
- display:block;
- opacity:2; 
- }
+  
  .panel {
     background-color: #444;
     height: 190px;

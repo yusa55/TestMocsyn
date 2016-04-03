@@ -2,6 +2,14 @@
 <html >
  <head>
 <link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function resizeText(multiplier) {
+  if (document.getElementById("big").style.fontSize == "") {
+    document.getElementById("big").style.fontSize = "1.0em";
+  }
+  document.getElementById("big").style.fontSize = parseFloat(document.getElementById("big").style.fontSize) + (multiplier * 0.2) + "em";
+}
+</script>
  </head> 
  <body>
 <div class="all">
@@ -10,11 +18,15 @@
 <img src="images/logo.png" style="width:95%; position:; height:100px;"></img>
 
 </div>
-<div style='margin-top:5px;'><b><u>JINSI YA KUISHI NA<br> UKIMWI:</u></b></div>
+<div style='margin-top:10px;'><b>JINSI YA KUISHI NA <br>UKIMWI:</b></div>
 
+<div class="zoom" >
+<img src="images/zoomout.jpg" width="40" height="40" align="right" onClick="resizeText(-1)"></img>
+<img src="images/zoomin.jpg" width="40" height="40" align="right" onClick="resizeText(1)"></img>
 
+</div>
  </div>
- <div id="loginScreen"> 
+ <div id="loginScreen" align="center"> 
 	<div class="panel">
 		<table border="0">
 			<tr>
@@ -72,49 +84,45 @@
  <a href="#" class="cancel">&times;</a> </div> 
  <div id="cover" > </div>
  
- <div class="big"><p>
+ <div class="big" id="big"><p>
  <font size="+3">M</font>ara tu baada ya mtu  kuaathirika na virusi vya UKIMWI, ni muhimu  kwake kuulinda mwili wake .
   Ili mtu mwenye virusi vya UKIMWI aweze kuishi muda mrefu na mwenye afya anapaswa afuate mambo yafuatayo:<p>
 <b> 1.	<u>Kufanya mazoezi:</b></u><br><p>
-<img src="images/exe.jpg" width="280" height="170"></img><br>
+<img src="images/exe.jpg" style="width:100%; position:; height:320px;"></img><br>
 Ni muhimu kwa mtu aliyeathirika na aliyekuwa hajaathirika na virusi vya UKIMWI kufanya  mazoezi ya viungo vya mwili kila siku japo kwa uchache  wa nusu saa.
 Mazoezi yanamsaidia binadamu kuboresha afya ya mwili wake.
 <p>
 
 <b> 2.	<u>Kula chakula bora: </b></u><br><p>
-<img src="images/food.jpg" width="280" height="170"></img><br>
+<img src="images/food.jpg" style="width:100%; position:; height:300px;"></img><br>
 Mara nyingi virusi vya UKIMWI husababisha upungufu wa uzito wa mwili na hata afya ya mtu aliyeathirika na virusi hivyo hudhoofu, pia hata ukuaji wa mtoto aliyeathirika huwa si wenye kuridhisha.
 Kwa hiyo watu hawa wanashauriwa kula mlo kamili (Mlo wenye virutubisho vyote vyenye kujenga mwili), kwani husaidia chembechembe za damu kuwa imara na kuufanya mwili uwe na afya nzuri.
 <p>
 
 <b>3.	<u>Kunywa maji safi na salama:</b></u><br><p>
-<img src="images/water.jpg" width="280" height="170"></img><br>
+<img src="images/water.jpg" style="width:100%; position:; height:320px;"></img><br>
 Kunywa maji safi na salama ni sababu moja wapo ya kuufanya mwili ufanyekazi  vizuri pia inasaidia kuwa na nguvu za kutosha, vilevile inapunguza sumu zilizokuwemo mwilini.
 Kwa hiyo mtu mwenye virusi vya UKIMWI na hata asokuwanavyo anashauriwa kunywa maji angalau lita tano kwa siku.
 Inatakiwa maji yachemshwe kwa kiasi cha dakika 20 ili kuuwa vijidudu vilivyokuwemo humo ambavyo vinasababisha maradhi kama vile bacteria, virusi n.k
 
 <p>
 <b>4.	<u>Kulala usingizi wa kutosha:</b></u><br><p>
-<img src="images/sleep.jpg" width="280" height="170"></img><br>
+<img src="images/sleep.jpg" style="width:100%; position:; height:320px;"></img><br>
 Kupumzika ni kitu kizuri kwa mtu,na mapumziko mazuri ni kulala kwa mda wa kutosha kitu ambacho hurudisha tena nguvu na uimara wa mtu husika. Kwa hivyo muathirika anapaswa kupumzika kwa muda mwingi ili kuziweka chembechembe za damu kuwa salama.
 Kwa hiyo anashauriwa kulala japo kwa masaa nane kwa siku.
 
 <p>
 <b>5.	<u>Kuishi kwa matumaini:</b></u><br><p>
-<img src="images/hope.jpg" width="280" height="170"></img><br>
+<img src="images/hope.jpg" style="width:100%; position:; height:320px;"></img><br>
 Mara nyingine waathirika  wa virusi vya UKIMWI hujitenga na jamii zao wenyewe kwa kuhisi kwamba jamii zinawabagua. La hasha! Jamii ndio itakayomsaidia alieathirika kujihisi kuwa hayupo peke yake kwamba watu wanamkubali na kuondosha fikra kuhusu afya yake. Kitu ambacho  kitapelekea hata kuwa na hisia nzuri katika maisha yake.
  
  
  
  </div>
  <div class="footer">
- <div class="juu">
-  <a href="#" class="rudi">Rudi Juu</a>
- </div>
- <div class="menuu"> 
-   <a href="#loginScreen" class="button">Yaliyomo</a>
- 
- </div> 
+ <a href="#loginScreen" align="center" class="button">Yaliyomo</a>
+  <a href="#" align="center" class="rudi" >Juu</a>
+
  </div>
  </body>
  </html>

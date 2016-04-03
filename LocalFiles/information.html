@@ -2,6 +2,14 @@
 <html >
  <head>
 <link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function resizeText(multiplier) {
+  if (document.getElementById("big").style.fontSize == "") {
+    document.getElementById("big").style.fontSize = "1.0em";
+  }
+  document.getElementById("big").style.fontSize = parseFloat(document.getElementById("big").style.fontSize) + (multiplier * 0.2) + "em";
+}
+</script>
  </head> 
  <body> 
 
@@ -12,12 +20,16 @@
 
 </div>
 
- <div style='margin-top:5px;'><b><u>UTANGULIZI JUU YA<br> MAELEZO YA UKIMWI:</u></b></div>
- 
+ <div style='margin-top:10px;'><b>UTANGULIZI JUU YA <br>MAELEZO YA UKIMWI:</b></div>
+ <div class="zoom" >
+<img src="images/zoomout.jpg" width="40" height="40" align="right" onClick="resizeText(-1)"></img>
+<img src="images/zoomin.jpg" width="40" height="40" align="right" onClick="resizeText(1)"></img>
+
+</div>
 
 
  </div>
- <div id="loginScreen"> 
+ <div id="loginScreen" align="center"> 
 	<div class="panel">
 		<table border="0">
 			<tr>
@@ -76,7 +88,7 @@
  <a href="#" class="cancel">&times;</a> </div> 
  <div id="cover" > </div>
  
- <div class="big"><p>
+ <div class="big" id="big"><p>
   <font size="+3">T</font>aaluma katika kitu chochote ndio chombo pekee kinachoweza kutatua na kuepusha kila tatizo linalowakabili binaadam. Ukosefu wa taaluma juu ya suala husika huondosha ufanisi katika kukabiliana na suala hilo.
 <p>Maradhi yametapakaa katika mazingira yetu, na huzidi kutuathiri kwa sababu hatuna taaluma sahihi juu ya maradhi hayo. Kutokana na sababu hiyo, tumekuandalia kitabu kifupi ambacho kitakuelimisha yuu ya <u>VIRUSI VINAVYOSABABISHA UKIMWI NA MARADHI YA UKIMWI.</u>
 <p>Kabla hatujaanza kujifunza, ni vyema tukajiuliza maswali yafuatayo:-<p>
@@ -98,13 +110,9 @@ Kwa mwaka 2009, inakadiriwa jumla ya watu milioni 33.33 duniani wanaishi na viru
  
  </div>
   <div class="footer">
- <div class="juu">
-  <a href="#" class="rudi">Rudi Juu</a>
- </div>
- <div class="menuu"> 
-   <a href="#loginScreen" class="button">Yaliyomo</a>
+  <a href="#loginScreen" align="center" class="button">Yaliyomo</a>
+  <a href="#" align="center" class="rudi" >Juu</a>
  
- </div> 
  </div>
 
  </body>

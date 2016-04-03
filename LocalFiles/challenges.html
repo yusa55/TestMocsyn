@@ -2,6 +2,14 @@
 <html >
  <head>
 <link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function resizeText(multiplier) {
+  if (document.getElementById("big").style.fontSize == "") {
+    document.getElementById("big").style.fontSize = "1.0em";
+  }
+  document.getElementById("big").style.fontSize = parseFloat(document.getElementById("big").style.fontSize) + (multiplier * 0.2) + "em";
+}
+</script>
  </head> 
  <body> 
 <div class="all">
@@ -10,13 +18,21 @@
 <img src="images/logo.png" style="width:95%; position:; height:100px;"></img>
 
 </div>
+
+<div style='margin-top:10px;'> <b>VIKWAZO KATIKA KUTOA <br>ELIMU YA UKIMWI:</b></div>
+<div class="zoom" >
+<img src="images/zoomout.jpg" width="40" height="40" align="right" onClick="resizeText(-1)"></img>
+<img src="images/zoomin.jpg" width="40" height="40" align="right" onClick="resizeText(1)"></img>
+
+</div>
+ </div>
  
-<div style='margin-top:5px;'> <b><u>VIKWAZO KATIKA<br>KUTOA ELIMU YA UKIMWI:</u></b></div>
  
 
  
- </div>
- <div id="loginScreen"> 
+
+
+ <div id="loginScreen"align="center"> 
 	<div class="panel">
 		<table border="0">
 			<tr>
@@ -74,7 +90,7 @@
  <a href="#" class="cancel">&times;</a> </div> 
  <div id="cover" > </div>
  
- <div class="big"><p>
+ <div class="big" id="big"><p>
  <font size="+3">U</font>kimwi ni maradhi yenye kutisha katika wakati huu.
  Ikiwa maradhi haya mtu anaweza kujikinga kwa asilimia mia moja(100%), Ikiwa elimu sahihi itatolewa, Kwa nini idadi ya
  waathirika wapya wa ukimwi inaongezeka?<p>
@@ -91,13 +107,9 @@ la kujamiiana, jambo ambalo ni aibu kwa jamii nyingi. Kutokana na hilo, ni vigum
  
  </div>
   <div class="footer">
- <div class="juu">
-  <a href="#" class="rudi">Rudi Juu</a>
- </div>
- <div class="menuu"> 
-   <a href="#loginScreen" class="button">Yaliyomo</a>
- 
- </div> 
+ <a href="#loginScreen" align="center" class="button">Yaliyomo</a>
+  <a href="#" align="center" class="rudi" >Juu</a>
+
  </div>
  </body>
  </html>

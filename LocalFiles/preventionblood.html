@@ -1,6 +1,14 @@
 <!DOCTYPE html> 
 <html >
  <head>
+ <script type="text/javascript">
+function resizeText(multiplier) {
+  if (document.getElementById("big").style.fontSize == "") {
+    document.getElementById("big").style.fontSize = "1.0em";
+  }
+  document.getElementById("big").style.fontSize = parseFloat(document.getElementById("big").style.fontSize) + (multiplier * 0.2) + "em";
+}
+</script>
 <link href="style.css" rel="stylesheet" type="text/css" />
  </head> 
  <body> 
@@ -10,9 +18,14 @@
 <img src="images/logo.png" style="width:95%; position:; height:100px;"></img>
 
 </div>
-  <div style='margin-top:5px;'><b><u>KUJILINDA DAMU <br> KWA DAMU:</u></b></div>
+  <div style='margin-top:10px;'><b>KUJILINDA DAMU KWA<br> DAMU:</b></div>
+  <div class="zoom" >
+<img src="images/zoomout.jpg" width="40" height="40" align="right" onClick="resizeText(-1)"></img>
+<img src="images/zoomin.jpg" width="40" height="40" align="right" onClick="resizeText(1)"></img>
+
+</div>
 </div> 
- <div id="loginScreen"> 
+ <div id="loginScreen" align="center"> 
 	<div class="panel">
 		<table border="0">
 			<tr>
@@ -69,7 +82,7 @@
      </div>
  <a href="#" class="cancel">&times;</a> </div> 
  <div id="cover" > </div>
-  <div class="big"><p>
+  <div class="big" id="big"><p>
  <font size="+3">K</font>ama tulivyotangulia kusema kua njia hii imepungua sana kusababisha 
 maambukizi ya virusi vinavyosababisha ukimwi. Namna ya kujikinga kwa njia hii ni 
 kuacha kabisa kutumia pamoja vitu vyenye ncha kali kama sindano, viwembe na kadhalika, 
@@ -82,7 +95,7 @@ Katika masaluni ya kukatia nywele au kusetia nywele, wanapaswa kua makini na vif
  <p>
 "PIMA VIRUSI VINAVYOSABABISHA UKIMWI KUJUA AFYA YAKO"
  
- <div id="loginScreen8"> 
+ <div id="loginScreen1" align="center"> 
  <div class="panel2">
  <table border="0">
 			<tr>
@@ -107,17 +120,10 @@ Katika masaluni ya kukatia nywele au kusetia nywele, wanapaswa kua makini na vif
  
  </div>
  <div class="footer">
- <div class="b">
- <a href="#loginScreen8" class="button2">
-Njia za Kujilinda</a>
-</div>
-<div class="juu1">
- <a href="#" class="rudi">Rudi Juu</a>
- </div>
- <div class="menuu"> 
-   <a href="#loginScreen" class="button">Yaliyomo</a>
- 
- </div> 
+ <a href="#loginScreen1" class="button2">Njia</a>
+ <a href="#loginScreen" align="center" class="button">Yaliyomo</a>
+  <a href="#" align="center" class="rudi" >Juu</a>
+
  </div>
  </body>
  </html>

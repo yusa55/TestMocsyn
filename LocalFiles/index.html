@@ -2,18 +2,33 @@
 <html >
  <head>
 <link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function resizeText(multiplier) {
+  if (document.getElementById("big").style.fontSize == "") {
+    document.getElementById("big").style.fontSize = "1.0em";
+  }
+  document.getElementById("big").style.fontSize = parseFloat(document.getElementById("big").style.fontSize) + (multiplier * 0.2) + "em";
+}
+</script>
  </head> 
  <body> 
  <div class="all">
  <div class="logo">
 
-<img src="images/logo.png" style="width:95%; position:fixed; height:100px;"></img>
+<img src="images/logo.png" style="width:95%; position:; height:100px;"></img>
 
 </div>
- 
+
+<div class="zoom">
+<img src="images/zoomout.jpg" width="40" height="40" align="right" onClick="resizeText(-1)"></img>
+<img src="images/zoomin.jpg" width="40" height="40" align="right" onClick="resizeText(1)"></img>
+<!--<input type="button" value="-" title="Zoom out" onClick="resizeText(-1)"/>-->
+<!--<b><marquee behavior="alternate" scrollamount="13" >ELIMU KUHUSU UKIMWI</marquee></b>-->
+</div>
+
  </div>
  
- <div id="loginScreen"> 
+ <div id="loginScreen" align="center"> 
 	<div class="panel">
 		<table border="0">
 			<tr>
@@ -71,14 +86,53 @@
      </div>
  <a href="#" class="cancel">&times;</a> </div> 
  <div id="cover" > </div>
-  <div class="footer">
- <div class="juu">
-  <a href="#" class="rudi">Rudi Juu</a>
- </div>
- <div class="#"> 
-   <a href="#loginScreen" class="button">Yaliyomo</a>
+ <div class="big" id="big">
  
- </div> 
+ <img src="images/animation.gif" style="width:100%;  height:320px;"></img>
+ <p>
+Tuungane PAMOJA KATIKA KUTOKOMEZA UGONJWA WA UKIMWI
+ <p>
+ Lakini vipi utapigana na Adui bila ya kumjua?!
+ <p>
+ Tunaamini maambukizi ya ukimwi  yanaendelea kuwa ni tishio  kutokana na ukosefu wa elimu, 
+ Kwa maana adui mkubwa wa ukimwi si ukimwi wenyewe lakini  ni ukosefu wa elimu ya ukimwi
+ <p>
+ "Elimu Ukimwi" imekuja kuondoa tatizo hilo, la ukosefu wa elimu ya ukimwi .Kwani tunaamini watu  wakipata elimu kuhusu ukimwi, 
+ maambukizi na hata unyanyapaa wa watu walioathirika na ukimwi utapaungua kwa hali kubwa.
+ <p>
+ "Elimu Ukimwi" inatoa elimu ambayo inaendana na wakati na unaweza kupata elimu juu ya yafuatayo:
+ <p>
+ <table>
+ <tr><td><a href="challenges.html"> 1.VIKWAZO KATIKA KUTOA ELIMU YA UKWIMI</a></td></tr>
+ <tr><td><a href="whattodo.html"> 2.HATUA ZAKUCHUKULIWA ILI KUEPUKA VIKWAZO</a></td></tr>
+ <tr><td><a href="meaning.html"> 3.MAELEZO KUHUSU UKIMWI </a></td></tr>
+ <tr><td><a href="transmission.html"> 4.MAAMBUKIZI YA VIRUSI VYA UKIMWI</a></td></tr>
+ <tr><td><a href="prevention.html"> 5.KUJIKINGA NA MAAMBUKIZI YA UKIMWI</a></td></tr>
+ <tr><td><a href="progression.html"> 6.HATUA ZA UKIMWI KATIKA MWILI</a></td></tr>
+ <tr><td><a href="living.html"> 7.JINSI YA KUISHI NA UKWMI</a></td></tr>
+ </table>
+
+ 
+<p>
+JISKIE HURU KATIKA KUPERUZI KATIKA APPLICATION  NA PIA USISITE KUTOA MAONI KUPITIA:
+<p>
+<a href="https://www.facebook.com/androidcampsuza/?fref=ts"><img src="images/fbi.jpg" width="60" height="70"></img></a>
+<a href="https://www.twitter.com/suzappclub/"><img src="images/t.jpg" width="60" height="70"></img></a>
+<a href="https://www.instagram.com/suzappclub/"><img src="images/i.jpg" width="60" height="70"></img></a>
+<a href="mailto:suzaappclub@gmail.com"><img src="images/mail.jpg" width="70" height="70"></img></a>
+
+<p>
+ </div>
+ 
+  <div class="footer">
+ 
+  <a href="#loginScreen" align="center" class="button">Yaliyomo</a>
+  <a href="#" align="center" class="rudi" >Juu</a>
+
+
+   
+ 
+
  </div>
  </body>
  </html>

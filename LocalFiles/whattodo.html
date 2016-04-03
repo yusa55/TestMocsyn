@@ -2,6 +2,14 @@
 <html >
  <head>
 <link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function resizeText(multiplier) {
+  if (document.getElementById("big").style.fontSize == "") {
+    document.getElementById("big").style.fontSize = "1.0em";
+  }
+  document.getElementById("big").style.fontSize = parseFloat(document.getElementById("big").style.fontSize) + (multiplier * 0.2) + "em";
+}
+</script>
  </head> 
  <body> 
  <div class="all">
@@ -11,10 +19,15 @@
 
 </div>
  
-  <div style='margin-top:5px;'><b><u>NJIA ZA KUKUSAIDIA<br> KUSHINDA VIKWAZO:</u></b></div>
+  <div style='margin-top:10px;'><b>NJIA ZA KUKUSAIDIA <br>KUSHINDA VIKWAZO:</b></div>
+  <div class="zoom" >
+<img src="images/zoomout.jpg" width="40" height="40" align="right" onClick="resizeText(-1)"></img>
+<img src="images/zoomin.jpg" width="40" height="40" align="right" onClick="resizeText(1)"></img>
+
+</div>
 
 </div> 
- <div id="loginScreen"> 
+ <div id="loginScreen" align="center"> 
 	<div class="panel">
 		<table border="0">
 			<tr>
@@ -71,7 +84,7 @@
  <a href="#" class="cancel">&times;</a> </div> 
  <div id="cover" > </div>
  
- <div class="big"><p>
+ <div class="big" id="big"><p>
  <font size="+3">N</font>ini tufanye ili tushinde vikwazo vinavyopelekea maambukizi ya virusi vya ukimwi kuongezeka?<p>
 <b><u>1.Soma:</u></b><br> Elimu ndio kila kitu, soma ujue namna ya kujilinda wewe mwenyewe. FAHAMU KUA UNAWEZA KUJIKINGA USIAMBUKIZWE KWA ASILIMIA MIA MOJA ikiwa unafahamu namna ya kujikinga.<p>
 <b><u>2.Fundisha: </u></b><br>Sambaza elimu sahihi kuhusu UKIMWI na VIRUSI VINAVYOSABABISHA UKIMWI kwa wale waliokuzunguka na wafahamasishe wafanye kama ufanyavyo.<p>
@@ -80,13 +93,9 @@
 
  </div>
  <div class="footer">
- <div class="juu">
-  <a href="#" class="rudi">Rudi Juu</a>
- </div>
- <div class="menuu"> 
-   <a href="#loginScreen" class="button">Yaliyomo</a>
- 
- </div> 
+ <a href="#loginScreen" align="center" class="button">Yaliyomo</a>
+  <a href="#" align="center" class="rudi" >Juu</a>
+
  </div>
  </body>
  </html>

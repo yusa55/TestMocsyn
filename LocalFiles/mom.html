@@ -2,6 +2,14 @@
 <html >
  <head>
 <link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function resizeText(multiplier) {
+  if (document.getElementById("big").style.fontSize == "") {
+    document.getElementById("big").style.fontSize = "1.0em";
+  }
+  document.getElementById("big").style.fontSize = parseFloat(document.getElementById("big").style.fontSize) + (multiplier * 0.2) + "em";
+}
+</script>
  </head> 
  <body> 
  <div class="all">
@@ -10,9 +18,13 @@
 <img src="images/logo.png" style="width:95%; position:; height:100px;"></img>
 
 </div>
-<div style='margin-top:5px;'><b><u>KUTOKA KWA MAMA  <br> KWENDA KWA MTOTO:</u></b></div> 
+<div style='margin-top:10px;'><b>KUTOKA KWA MAMA <br>KWENDA KWA MTOTO:</b></div> 
+<div class="zoom" >
+<img src="images/zoomout.jpg" width="40" height="40" align="right" onClick="resizeText(-1)"></img>
+<img src="images/zoomin.jpg" width="40" height="40" align="right" onClick="resizeText(1)"></img>
+</div>
  </div>
- <div id="loginScreen"> 
+ <div id="loginScreen" align="center"> 
 	<div class="panel">
 		<table border="0">
 			<tr>
@@ -69,7 +81,7 @@
      </div>
  <a href="#" class="cancel">&times;</a> </div> 
  <div id="cover" > </div>
-  <div class="big"><p>
+  <div class="big" id="big"><p>
  <font size="+3">M</font>ama mja mzito ambae ameathirika na virusi vinavyosababisha ukimwi anao uwezekano 
  wa kumuambukiza mtoto wake virusi hivyo. Ikiwa hakuna kinga kwa mama mjamzito mwenye virusi vya ukimwi, 
  ipo asilimia 30 ya mtoto kuzaliwa akiwa tayari ni mwathirika wa virusi hivyo.
@@ -114,7 +126,7 @@
  <p>
  Njia hii ya kutoka kwa mama kwenda kwa mtoto inachangia asilimia 19 ya uwambukizaji virusi vinavyosababisha ukimwi hapa Tanzania.
 
- <div id="loginScreen4"> 
+ <div id="loginScreen1" align="center"> 
  <div class="panel2">
  <table border="0">
 			<tr>
@@ -139,17 +151,10 @@
  
  </div>
  <div class="footer">
- <div class="b">
- <a href="#loginScreen4" class="button2">
-Njia za Maambukizi</a>
- </div>
-<div class="juu1">
- <a href="#" class="rudi">Rudi Juu</a>
- </div>
- <div class="menuu"> 
-   <a href="#loginScreen" class="button">Yaliyomo</a>
- 
- </div> 
+ <a href="#loginScreen1" class="button2">Njia</a>
+ <a href="#loginScreen" align="center" class="button">Yaliyomo</a>
+  <a href="#" align="center" class="rudi" >Juu</a>
+
  </div>
  </body>
  </html>

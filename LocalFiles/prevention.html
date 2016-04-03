@@ -2,6 +2,14 @@
 <html >
  <head>
 <link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function resizeText(multiplier) {
+  if (document.getElementById("big").style.fontSize == "") {
+    document.getElementById("big").style.fontSize = "1.0em";
+  }
+  document.getElementById("big").style.fontSize = parseFloat(document.getElementById("big").style.fontSize) + (multiplier * 0.2) + "em";
+}
+</script>
  </head> 
  <body> 
  <div class="all">
@@ -11,10 +19,14 @@
 
 </div>
 
- <div style='margin-top:5px;'><b><u>KUJILINDA MAAMBUKIZI <br> YA UKIMWI:</u></b></div>
+ <div style='margin-top:10px;'><b>KUJILINDA MAAMBUKIZI<br> YA UKIMWI:</b></div>
+<div class="zoom" >
+<img src="images/zoomout.jpg" width="40" height="40" align="right" onClick="resizeText(-1)"></img>
+<img src="images/zoomin.jpg" width="40" height="40" align="right" onClick="resizeText(1)"></img>
 
+</div>
  </div>
- <div id="loginScreen"> 
+ <div id="loginScreen" align="center"> 
 	<div class="panel">
 		<table border="0">
 			<tr>
@@ -69,7 +81,7 @@
  
  
 </div>
-<div class="big"><p>
+<div class="big" id="big"><p>
  <font size="+3">K</font>ama tulivyokwisha tangulia kusema katika utangulizi wa awali kuwa 
  "MTU ANAWEZA KUJILINDA ASIAMBUKIZWE VIRUSI VINAVYOSABABISHA UKIMWI KWA ASILIMIA 100, ALIMRADI AMEPATA ELIMU 
  SAHIHI JUU YA NAMNA YA KUJIKINGA"
@@ -82,7 +94,7 @@
  <p>
 
  
- <div id="loginScreen6"> 
+ <div id="loginScreen1" align="center"> 
  <div class="panel2">
  <table border="0">
 			<tr>
@@ -106,17 +118,10 @@
  <a href="#" class="cancel2">&times;</a> </div> 
  </div>
  <div class="footer">
- <div class="b">
- <a href="#loginScreen6" class="button2">
-Njia za Kujilinda</a>
-</div>
-<div class="juu1">
- <a href="#" class="rudi">Rudi Juu</a>
- </div>
- <div class="menuu"> 
-   <a href="#loginScreen" class="button">Yaliyomo</a>
+ <a href="#loginScreen1" class="button2">Njia</a>
+ <a href="#loginScreen" align="center" class="button">Yaliyomo</a>
+  <a href="#" align="center" class="rudi" >Juu</a>
  
- </div> 
  </div>
  
  </body>
